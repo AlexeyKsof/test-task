@@ -1,0 +1,63 @@
+input {
+  border: none;
+  background-color: #fff;
+  padding: 20px 25px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  width: 300px;
+  height: 60px;
+  border-radius: 30px;
+}
+.dropdown_c {
+  position: relative;
+  margin: 30px 0 10px;
+  width: 100%;
+}
+
+.selected span {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.drop-content {
+  position: relative;
+}
+
+.drop-content ul {
+  display: block;
+  list-style: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  max-height: 100vh;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+.closed ul {
+  max-height: 0 !important;
+}
+
+.drop-content ul li span {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.drop-content ul li span:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-left: 5px solid rgba(0, 0, 0, 0.8);
+}
